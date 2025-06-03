@@ -1,0 +1,11 @@
+{
+  "name": "react-project-manager",
+  "version": "1.0.0",
+  "description": "Project Management Interface",
+  "author": "Gabriel Demetrios Lafis",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
