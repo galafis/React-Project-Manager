@@ -1,0 +1,8 @@
+graph TD
+    A[Usuário] -->|Interage com| B(Frontend React)
+    B -->|Faz requisições para| C{Backend API}
+    C -->|Armazena/Recupera dados de| D[Banco de Dados]
+    B -->|Gerenciamento de Estado| E[Redux/Context API]
+    E --> B
+    C -->|Autenticação/Autorização| F[Serviço de Autenticação]
+    F --> C
