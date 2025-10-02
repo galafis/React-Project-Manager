@@ -1,20 +1,16 @@
-/**
- * Project Management Interface
- * @author Gabriel Demetrios Lafis
- */
-
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
-    return (
-        <div style={{padding: '20px', fontFamily: 'Arial, sans-serif'}}>
-            <h1>Project Management Interface</h1>
-            <p>Created by Gabriel Demetrios Lafis</p>
-            <button onClick={() => alert('Hello from Gabriel!')}>
-                Click me!
-            </button>
-        </div>
-    );
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* Adicione outras rotas aqui conforme necessário */}
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
